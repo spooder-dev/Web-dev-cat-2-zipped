@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Platform</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logoholder">
+            <img id="logo" src="logo.png" alt="Recipe Logo">
+        </div>
+        <ul id="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner -->
+        <div id="banner"></div>
+
+        <!-- Description Section -->
+        <div class="description">
+            <div id="info">
+                <p>
+                    Welcome to our recipe sharing platform! Explore a wide range of delicious recipes shared by our community members. Whether you're looking for quick and easy meals or gourmet delights, you'll find it all here.
+                </p>
+            </div>
+
+            <!-- Featured Recipes Section -->
+            <div id="recipes">
+                <h2>Featured Recipes</h2>
+                <div class="recipe-card">
+                    <!-- Insert Image Here: <img src="recipe1.jpg" alt="Recipe 1"> -->
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus justo non odio condimentum, sit amet volutpat nisi vestibulum.</p>
+                    <button>View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <!-- Insert Image Here: <img src="recipe2.jpg" alt="Recipe 2"> -->
+                    <h3>Vegetarian Pizza</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus justo non odio condimentum, sit amet volutpat nisi vestibulum.</p>
+                    <button>View Recipe</button>
+                </div>
+                <!-- Add more recipe cards here -->
+            </div>
+        </div>
+
+        <!-- Recipe Submission Form -->
+        <div class="form">
+            <form class="recipe-form">
+                <h2>Share Your Recipe</h2>
+                <div class="form-group">
+                    <label for="recipe-name">Recipe Name:</label>
+                    <textarea id="recipe-name" name="recipe-name" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="recipe-description">Description:</label>
+                    <textarea id="recipe-description" name="recipe-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="instructions">Instructions:</label>
+                    <textarea id="instructions" name="instructions" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                <input type="submit" value="Submit" onclick="validateForm()">
+            </form>
+
+        </div>
+            <div class="quiz-container" id="quiz">
+                <div class="quiz-header">
+                    <h2 id="question">Question is loading...</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer" />
+                            <label for="a" id="a_text">Answer...</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer" />
+                            <label for="b" id="b_text">Answer...</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer" />
+                            <label for="c" id="c_text">Answer...</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer" />
+                            <label for="d" id="d_text">Answer...</label>
+                        </li>
+                    </ul>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="recipies.js" defer></script>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Recipe Sharing Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

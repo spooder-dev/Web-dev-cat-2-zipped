@@ -1,0 +1,232 @@
+.form-group textarea {
+    max-width:1000px; 
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #507fe4;
+    box-shadow: 0 2px 4px rgba(7, 42, 199, 0.884);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.logoholder {
+    flex: 1;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#navigation {
+    list-style-type: none;
+    display: flex;
+    border-radius: 20px;
+    
+}
+
+#navigation li {
+    margin-right: 20px;
+    display:flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    border: 1px solid #333; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding around the list items */
+}
+
+#navigation li:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.7); /* Add glow effect on hover */
+    
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Banner Styles */
+#banner {
+    background-image: url("Banner.webp"); /* Replace "banner.jpg" with your banner image */
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    height: 500px;
+    background-size: cover;
+}
+
+/* Description Section Styles */
+.description {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#info p {
+    background-color:blue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#info:hover{
+    color: burlywood;
+}
+
+#recipes {
+    flex: 2;
+}
+
+.recipe-card {
+    background-color:rgba(7, 42, 199, 0.884);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.recipe-form{
+    align-items: center;
+    text-align: center;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.form-group{
+    border-color: burlywood;
+    text-align: center;
+}
+
+.recipe-card:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.7); /* Add glow effect on hover */
+    color: burlywood;
+}
+
+.recipe-card img {
+    width: 100%; /* Ensure recipe images fill the container */
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    margin-top: 10px;
+}
+
+.recipe-card p {
+    margin-bottom: 10px;
+}
+
+.recipe-card button {
+    background-color: #7b339b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recipe-card button:hover {
+    background-color: #732d91;
+}
+
+/* Recipe Submission Form Styles */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.form-group input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #7b339b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #732d91;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.quiz-container{
+    background-color: blue;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.quiz-container:hover{
+    color: burlywood;
+}
+
+.quiz-header ul{
+    list-style-type:none;
+    text-align: center;
+}
